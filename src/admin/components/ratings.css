@@ -1,0 +1,34 @@
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    justify-items: flex-end;
+    width: max-content;
+    animation: slide 7s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+.slider-item {
+    width: 350px;
+    height: 150px;
+    border: 2px solid #6b7280;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    margin-right: 10px; /* Razmak između elemenata */
+}
