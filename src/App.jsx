@@ -26,7 +26,7 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import './app.css'
+import './App.css';
 import AddUser from "./admin/components/AddUser";
 
 const App = () => {
