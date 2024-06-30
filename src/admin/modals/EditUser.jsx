@@ -46,9 +46,11 @@ const EditUserModal = ({open,onClose,userId}) => {
 
     const applyEdit = async() =>{
         try{
-            const {data} = await axiosI.patch(`/admin/${'user' || 'carDealer'}/${userId}`,{location:{state,city},username, dealershipName}, { headers: { authorization: `Bearer ${token}` } });
+            
+            await axiosI.patch(`/admin/${'user' || 'carDealer'}/${userId}`,{location:{state,city},username, dealershipName}, { headers: { authorization: `Bearer ${token}` } });
             alert('User updated successfully');
             onClose();
+            
         }catch(e){
             alert(e?.response?.data || 'Could not update this user')
         }

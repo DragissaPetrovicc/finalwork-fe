@@ -36,7 +36,7 @@ const UserReports = () => {
     const handleSetAsAdmin = async (userId) => {
         try{
             
-            const {data} = await axiosI.patch(`/admin/${'user' || 'carDealer'}/${userId}`,{role:'ADMIN'}, { headers: { authorization: `Bearer ${token}` } });
+            await axiosI.patch(`/admin/${'user' || 'carDealer'}/${userId}`,{role:'ADMIN'}, { headers: { authorization: `Bearer ${token}` } });
             alert('This user is now ADMINISTRATOR');
 
         }catch(e){

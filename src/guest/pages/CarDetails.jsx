@@ -151,7 +151,7 @@ const CarDetails = () => {
             }
         }
         getCarDetails();
-    }, []);
+    }, [car]);
 
     const [openRepCar, setOpenRepCar] = useState(false);
     const handleOpenRepCar = () => setOpenRepCar(true);

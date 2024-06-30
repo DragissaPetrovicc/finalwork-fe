@@ -44,7 +44,7 @@ const SettingsPage = ({children}) => {
     }
     fetchUser();
 
-  },[]);
+  },[id]);
 
   
   const [openModal, setOpenModal] = useState(false);
