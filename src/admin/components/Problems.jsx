@@ -31,7 +31,7 @@ const Problems = () => {
         {reps.map((rep) => (
           <div
             key={rep?._id}
-            className="w-full h-min flex flex-col justify-between"
+            className="w-full h-min flex flex-col justify-between p-3 border-2 border-black"
           >
             <span className="text-lg">
               ReportedBy:
