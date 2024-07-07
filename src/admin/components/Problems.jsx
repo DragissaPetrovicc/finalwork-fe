@@ -36,13 +36,12 @@ const Problems = () => {
             <span className="text-lg">
               ReportedBy:
               <b>
-                ua
-                {/*rep.ratedBy?.username
+                {rep.ratedBy?.username
                   ? rep.ratedBy?.username
-                  : rep.ratedBy?.dealershipName*/}
+                  : rep.ratedBy?.dealershipName}
               </b>
             </span>
-            ua {rep?.problem}
+            <b>{rep?.problem}</b>
           </div>
         ))}
       </div>
