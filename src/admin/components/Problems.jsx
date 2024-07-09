@@ -36,9 +36,9 @@ const Problems = () => {
             <span className="text-lg">
               ReportedBy:
               <b>
-                {rep.ratedBy?.username
-                  ? rep.ratedBy?.username
-                  : rep.ratedBy?.dealershipName}
+                {rep.reportedBy?.username
+                  ? rep.reportedBy?.username
+                  : rep.reportedBy?.dealershipName}
               </b>
             </span>
             <b>{rep?.problem}</b>
